@@ -1,0 +1,167 @@
+## mako
+<%page expression_filter="h"/>
+<%!
+  from django.urls import reverse
+  from django.utils.translation import ugettext as _
+  from branding.api import get_footer
+  from openedx.core.djangoapps.lang_pref.api import footer_language_selector_is_enabled
+%>
+<% footer = get_footer(is_secure=is_secure) %>
+<%namespace name='static' file='static_content.html'/>
+
+% if uses_bootstrap:
+<div>
+    <footer id="footer">
+      <div class="container">
+          <div class="row">
+  
+              <div class="col-md-3">
+                  <a href="https://setec.ufmt.br">
+                      <img src="${static.url("images/setec-logo-w.svg")}" class="img-responsive" style="max-height: 70px;" />
+                  </a>
+  
+                  <a href="https://ufmt.br">
+                      <img src="${static.url("images/logo-ufmt-branca-horizontal.svg")}" class="img-responsive" style="max-height: 70px;" />
+                  </a>
+              </div>
+  
+              <div class="col-md-3">
+                  <div class="newsletter">
+                      <h4>Sobre o UFMT Online</h4>
+                      <ul class="contact">
+                          <li><p><i class="fa fa-book"></i> <a href="https://setec.ufmt.br/polos" target="_blank">O UFMT Online</a></p></li>
+                          <li><p><i class="fa fa-book"></i> <a href="https://setec.ufmt.br/auab" target="_blank">A SETEC</a></p></li>
+                          <li><p><i class="fa fa-book"></i> <a href="https://setec.ufmt.br/fale-conosco" target="_blank">Fale conosco</a></p></li>
+                      </ul>
+                  </div>
+              </div>
+  
+              <div class="col-md-4">
+                  <div class="contact-details">
+                      <h4>Localização</h4>
+                      <ul class="contact">
+                          <li><p><i class="fa fa-map-marker"></i> <strong>Endereço:</strong> Av. Fernando Corrêa da Costa - Cidade Universitária - CEP 78060-900 - UFMT</p></li>
+                          <li><p><i class="fa fa-phone"></i> <strong>Secretaria:</strong> +55 (65) 3615-6242</p></li>
+                          <li><p><i class="fa fa-phone"></i> <strong>Coordenação:</strong> +55 (65) 3615-6243</p></li>
+                          <li><p><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:setec@ufmt.br">setec@ufmt.br</a></p></li>
+                      </ul>
+                  </div>
+              </div>
+  
+              <div class="col-md-2">
+                  <h4>Redes Sociais</h4>
+                  <ul class="social-icons">
+                      <li class="social-icons-facebook"><a href="http://www.facebook.com/ufmtonline" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                      <li class="social-icons-twitter"><a href="http://www.twitter.com/ufmtonline" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                      <li class="social-icons-instagram"><a href="http://www.instagram.com/ufmtonline" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                  </ul>
+              </div>
+  
+          </div>
+      </div>
+  
+      <div class="footer-copyright">
+          <div class="container">
+              <div class="row">
+  
+                  <div class="col-md-10">
+                     
+                     <p class="copyright">${footer['copyright']} ${u" | {icp}".format(icp=getattr(settings,'ICP_LICENSE')) if getattr(settings,'ICP_LICENSE',False) else ""}</p>
+             	     
+                  </div>
+                  <div class="col-md-2">
+			<a href="https://open.edx.org/">
+                      		<img src="https://files.edx.org/openedx-logos/edx-openedx-logo-tag-light.png" class="img-responsive mt-xl" style="max-height: 50px;" />
+                  	</a>
+		  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  </div>
+% else:
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+ <!-- McDaniel Oct-2018: add the Bootstrap javascript library, unless it's already included from webpack -->
+ ## xss-lint: disable=mako-invalid-js-filter
+ <script type="text/javascript" src="${static.url('common/js/vendor/bootstrap.bundle.js')}"></script>
+ <div>
+    <footer id="footer">
+      <div class="container">
+          <div class="row">
+  
+              <div class="col-md-3">
+                  <a href="https://setec.ufmt.br">
+                      <img src="${static.url("images/setec-logo-w.svg")}" class="img-responsive" style="max-height: 70px;" />
+                  </a>
+  
+                  <a href="https://ufmt.br">
+                      <img src="${static.url("images/logo-ufmt-branca-horizontal.svg")}" class="img-responsive" style="max-height: 70px;" />
+                  </a>
+              </div>
+  
+              <div class="col-md-3">
+                  <div class="newsletter">
+                      <h4>Sobre o UFMT Online</h4>
+                      <ul class="contact">
+                          <li><p><i class="fa fa-book"></i> <a href="https://setec.ufmt.br/polos" target="_blank">O UFMT Online</a></p></li>
+                          <li><p><i class="fa fa-book"></i> <a href="https://setec.ufmt.br/auab" target="_blank">A SETEC</a></p></li>
+                          <li><p><i class="fa fa-book"></i> <a href="https://setec.ufmt.br/fale-conosco" target="_blank">Fale conosco</a></p></li>
+                      </ul>
+                  </div>
+              </div>
+  
+              <div class="col-md-4">
+                  <div class="contact-details">
+                      <h4>Localização</h4>
+                      <ul class="contact">
+                          <li><p><i class="fa fa-map-marker"></i> <strong>Endereço:</strong> Av. Fernando Corrêa da Costa - Cidade Universitária - CEP 78060-900 - UFMT</p></li>
+                          <li><p><i class="fa fa-phone"></i> <strong>Secretaria:</strong> +55 (65) 3615-6242</p></li>
+                          <li><p><i class="fa fa-phone"></i> <strong>Coordenação:</strong> +55 (65) 3615-6243</p></li>
+                          <li><p><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:setec@ufmt.br">setec@ufmt.br</a></p></li>
+                      </ul>
+                  </div>
+              </div>
+  
+              <div class="col-md-2">
+                  <h4>Redes Sociais</h4>
+                  <ul class="social-icons">
+                      <li class="social-icons-facebook"><a href="http://www.facebook.com/ufmtonline" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                      <li class="social-icons-twitter"><a href="http://www.twitter.com/ufmtonline" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                      <li class="social-icons-instagram"><a href="http://www.instagram.com/ufmtonline" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                  </ul>
+              </div>
+  
+          </div>
+      </div>
+  
+      <div class="footer-copyright">
+          <div class="container">
+              <div class="row">
+  
+                  <div class="col-md-10">
+                     
+                     <p class="copyright">${footer['copyright']} ${u" | {icp}".format(icp=getattr(settings,'ICP_LICENSE')) if getattr(settings,'ICP_LICENSE',False) else ""}</p>
+             	     
+                  </div>
+                  <div class="col-md-2">
+			<a href="https://open.edx.org/">
+                      		<img src="https://files.edx.org/openedx-logos/edx-openedx-logo-tag-light.png" class="img-responsive mt-xl" style="max-height: 50px;" />
+                  	</a>
+		  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  </div>
+% endif
+% if include_dependencies:
+  <%static:js group='base_vendor'/>
+  <%static:css group='style-vendor'/>
+  <%include file="widgets/segment-io.html" />
+  <%include file="widgets/segment-io-footer.html" />
+% endif
+% if footer_css_urls:
+  % for url in footer_css_urls:
+    <link rel="stylesheet" type="text/css" href="${url}"></link>
+  % endfor
+% endif
