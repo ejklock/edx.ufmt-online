@@ -19,3 +19,12 @@ $ufmtonline-bg: #1e1e1e;
   .wrapper-r {
     background: $ufmtonline-bg!important;
   }
+
+
+.info-course {
+    .course-org,
+    .course-title,
+    .course-number {
+        color: $white !important;
+    }
+}
