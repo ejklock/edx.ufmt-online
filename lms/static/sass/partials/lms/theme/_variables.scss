@@ -858,4 +858,50 @@ section.page-header.custom-product {
     margin: 0 !important;
 }
 
+.teacher-container {
+    display: flex;
+    max-width: 800px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teacher {
+    display: flex;
+    flex-direction: column;
+}
+
+.teacher img {
+    width: 180px;
+    height: 180px;
+    padding: 15px;
+    align-self: center;
+
+    border-radius: 50%;
+}
+
+.teacher h4 {
+    text-align: center;
+}
+
+.teacher p {
+    text-align: left;
+    padding: 10px;
+    align-self: center;
+    vertical-align: middle;
+    color: #777;
+}
+
+.teacher-photo-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .teacher {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
 @import "edx-bootstrap/sass/open-edx/theme";
