@@ -11,8 +11,8 @@
 
 % if uses_bootstrap:
 
-  <footer id="footer">
-         <div class="ufmtonline-footer">
+ <footer id="footer">
+    <div class="ufmtonline-footer">
         <div class="flex-row">
           <div class="column-flex-container logos">
              <a href="https://setec.ufmt.br">
@@ -67,15 +67,31 @@
             </div>
           </div>
       </div>
+    </div>
+    <div class="platform-copyright">
+        <div class="flex-row">
+          <p class="copyright-text">
+            © UFMT Online. All rights reserved except where noted. edX, Open edX
+            and their respective logos are registered trademarks of edX Inc.
+          </p>
+
+          <a href="https://open.edx.org/">
+            <img
+              src="https://files.edx.org/openedx-logos/edx-openedx-logo-tag-light.png"
+              class="img-responsive mt-xl"
+              style="max-height: 50px;"
+            />
+          </a>
+        </div>
+      </div>
   </footer>
- 
 % else:
 
 
  ## xss-lint: disable=mako-invalid-js-filter
  
   <footer id="footer">
-         <div class="ufmtonline-footer">
+    <div class="ufmtonline-footer">
         <div class="flex-row">
           <div class="column-flex-container logos">
              <a href="https://setec.ufmt.br">
@@ -129,6 +145,23 @@
               </div>
             </div>
           </div>
+      </div>
+    </div>
+    <div class="platform-copyright">
+        <div class="flex-row">
+          <p class="copyright-text">
+            © UFMT Online. All rights reserved except where noted. edX, Open edX
+            and their respective logos are registered trademarks of edX Inc.
+          </p>
+
+          <a href="https://open.edx.org/">
+            <img
+              src="https://files.edx.org/openedx-logos/edx-openedx-logo-tag-light.png"
+              class="img-responsive mt-xl"
+              style="max-height: 50px;"
+            />
+          </a>
+        </div>
       </div>
   </footer>
 % endif
