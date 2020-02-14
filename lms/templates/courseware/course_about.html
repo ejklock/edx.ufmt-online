@@ -99,6 +99,12 @@ $('#register_error').html(
 <script src="${static.url('js/course_info.js')}"></script>
 </%block>
 <%block name="pagetitle">${course.display_name_with_default_escaped}</%block>
+<style>
+    .content-wrapper{
+        margin: 0;
+        padding: 0;
+    }
+</style>
 <div class="ufmt-online-about-course">
    <section class="page-header page-header-color page-header-primary page-header-more-padding">
       <div class="container-fluid">
@@ -123,7 +129,7 @@ $('#register_error').html(
 <div class="container ufmt-online-about-course">
    <section class="p-lg">
       <div class="row">
-         <div class="col-md-8 mt-3">
+         <div class="col-md-8 mt-3 about-course-info">
             ${get_course_about_section(request, course, "overview")}
          </div>
          <div class="col-md-4">

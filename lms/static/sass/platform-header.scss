@@ -1,0 +1,33 @@
+.global-header {
+    background: #1e1e1e;
+    border-bottom: none;
+    .nav-links .main .nav-tab a {
+        color: #ffff;
+    }
+
+    .nav-links .secondary .nav-item a {
+        color: #ffff;
+    }
+    .nav-links .secondary .dropdown-user-menu .dropdown-item a {
+        color: #000;
+    }
+
+    .nav-links .secondary .nav-item.nav-item-dropdown {
+        color: #ffff;
+    }
+
+    .nav-links .secondary a.register-btn {
+        background-color: #ffffff00;
+    }
+    .nav-links .secondary a.sign-in-btn:hover,
+    .nav-links .secondary .nav-item a.shopping-cart:hover {
+        background-color: #ffffff00 !important;
+    }
+
+    .hamburger-menu .line {
+        background: #ffff;
+    }
+    .help-link {
+        display: none;
+    }
+}

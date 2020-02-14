@@ -1,0 +1,785 @@
+section.page-header h1 {
+    border-bottom-color: #4582bf;
+}
+.ufmt-online-about-course {
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    h1 {
+        font-size: 2.6em;
+        line-height: 44px;
+        margin: 0 0 32px 0;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #1d2127;
+        font-weight: 200;
+        letter-spacing: -1px;
+        margin: 0;
+    }
+    p {
+        color: #777;
+        line-height: 24px;
+        margin: 0 0 20px;
+    }
+}
+section.page-header.custom-product {
+    background-color: #3c75ae;
+    border-top-color: #407dba;
+}
+
+.ufmt-online-about-course {
+    .about-course-info {
+        padding: 30px;
+    }
+}
+.ufmt-online-about-course .page-header-color.page-header-primary {
+    background-color: #4582bf;
+    border-bottom-color: #4582bf;
+    color: #fff;
+}
+
+.ufmt-online-about-course .page-header-color.page-header-primary h1 {
+    color: #fff;
+}
+
+.ufmt-online-about-course .page-header-color.page-header-primary h1 span {
+    color: #fff;
+}
+
+.ufmt-online-about-course .page-header-color.page-header-primary a {
+    color: #fff;
+}
+
+.ufmt-online-about-course
+    .page-header-color.page-header-primary
+    .breadcrumb
+    > .active {
+    color: #fff;
+}
+
+.ufmt-online-about-course .page-header-color.page-header-secondary {
+    background-color: #e36159;
+    border-bottom-color: #e36159;
+    color: #fff;
+}
+
+.ufmt-online-about-course .page-header-color.page-header-secondary h1 {
+    color: #fff;
+}
+
+.ufmt-online-about-course .page-header-color.page-header-secondary h1 span {
+    color: #fff;
+}
+
+.ufmt-online-about-course .page-header-color.page-header-secondary a {
+    color: #fff;
+}
+
+.ufmt-online-about-course
+    .page-header-color.page-header-secondary
+    .breadcrumb
+    > .active {
+    color: #fff;
+}
+
+.ufmt-online-about-course .page-header-color.page-header-tertiary {
+    background-color: #2baab1;
+    border-bottom-color: #2baab1;
+    color: #fff;
+}
+
+.ufmt-online-about-course .page-header-color.page-header-tertiary h1 {
+    color: #fff;
+}
+
+.ufmt-online-about-course .page-header-color.page-header-tertiary h1 span {
+    color: #fff;
+}
+
+.ufmt-online-about-course .page-header-color.page-header-tertiary a {
+    color: #fff;
+}
+
+.ufmt-online-about-course
+    .page-header-color.page-header-tertiary
+    .breadcrumb
+    > .active {
+    color: #fff;
+}
+
+.ufmt-online-about-course .page-header-color.page-header-quaternary {
+    background-color: #383f48;
+    border-bottom-color: #383f48;
+    color: #fff;
+}
+
+.ufmt-online-about-course .page-header-color.page-header-quaternary h1 {
+    color: #fff;
+}
+
+.ufmt-online-about-course .page-header-color.page-header-quaternary h1 span {
+    color: #fff;
+}
+
+.ufmt-online-about-course .page-header-color.page-header-quaternary a {
+    color: #fff;
+}
+
+.ufmt-online-about-course
+    .page-header-color.page-header-quaternary
+    .breadcrumb
+    > .active {
+    color: #fff;
+}
+
+.ufmt-online-about-course .page-header-color.page-header-dark {
+    background-color: #2e353e;
+    border-bottom-color: #2e353e;
+    color: #fff;
+}
+
+.ufmt-online-about-course .page-header-color.page-header-dark h1 {
+    color: #fff;
+}
+
+.ufmt-online-about-course .page-header-color.page-header-dark h1 span {
+    color: #fff;
+}
+
+.ufmt-online-about-course .page-header-color.page-header-dark a {
+    color: #fff;
+}
+
+.ufmt-online-about-course
+    .page-header-color.page-header-dark
+    .breadcrumb
+    > .active {
+    color: #fff;
+}
+
+.ufmt-online-about-course .page-header-color.page-header-light {
+    background-color: #fff;
+    border-bottom-color: #fff;
+    color: #777;
+}
+
+.ufmt-online-about-course .page-header-color.page-header-light h1 {
+    color: #777;
+}
+
+.ufmt-online-about-course .page-header-color.page-header-light h1 span {
+    color: #777;
+}
+
+.ufmt-online-about-course .page-header-color.page-header-light a {
+    color: #777;
+}
+
+.ufmt-online-about-course
+    .page-header-color.page-header-light
+    .breadcrumb
+    > .active {
+    color: #777;
+}
+
+/*.ufmt-online-about-course  Featured Box */
+.ufmt-online-about-course .featured-box {
+    background: #f5f5f5;
+    background: -webkit-linear-gradient(top, #fff 1%, #fcfcfc 98%) repeat scroll
+        0 0 transparent;
+    background: linear-gradient(to bottom, #fff 1%, #fcfcfc 98%) repeat scroll 0
+        0 transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #dfdfdf;
+    border-left: 1px solid #ececec;
+    border-radius: 8px;
+    border-right: 1px solid #ececec;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.04);
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    min-height: 100px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.ufmt-online-about-course .featured-box h4 {
+    font-size: 1.3em;
+    font-weight: 400;
+    letter-spacing: -0.7px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.ufmt-online-about-course .featured-box .box-content {
+    border-radius: 8px;
+    border-top: 1px solid #ccc;
+    border-top-width: 4px;
+    padding: 30px 30px 10px 30px;
+    position: relative;
+    top: -1px;
+}
+
+.ufmt-online-about-course .featured-box .learn-more {
+    display: block;
+    margin-top: 10px;
+}
+
+/*.ufmt-online-about-course  Featured Box Left */
+.ufmt-online-about-course .featured-box-text-left {
+    text-align: left;
+}
+
+/*.ufmt-online-about-course  Featured Boxes - Flat */
+.ufmt-online-about-course
+    .featured-boxes-flat
+    .ufmt-online-about-course
+    .featured-box {
+    box-shadow: none;
+    margin: 10px 0;
+}
+
+.ufmt-online-about-course .featured-boxes-flat .featured-box .box-content {
+    background: #fff;
+    margin-top: 65px;
+}
+
+.ufmt-online-about-course .featured-boxes-flat .featured-box .icon-featured {
+    display: inline-block;
+    font-size: 38px;
+    height: 90px;
+    line-height: 90px;
+    padding: 0;
+    width: 90px;
+    margin: -100px 0 -15px;
+    position: relative;
+    top: -37px;
+}
+
+/*.ufmt-online-about-course  Featured Boxes - Style 2 */
+.ufmt-online-about-course
+    .featured-boxes-style-2
+    .ufmt-online-about-course
+    .featured-box {
+    background: none;
+    border: 0;
+    margin: 10px 0;
+    box-shadow: none;
+}
+
+.ufmt-online-about-course .featured-boxes-style-2 .featured-box .box-content {
+    border: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.ufmt-online-about-course .featured-boxes-style-2 .featured-box .icon-featured {
+    display: inline-block;
+    font-size: 30px;
+    height: 75px;
+    line-height: 75px;
+    padding: 0;
+    width: 75px;
+    margin-top: 0;
+}
+
+/*.ufmt-online-about-course  Featured Boxes - Style 3 */
+.ufmt-online-about-course
+    .featured-boxes-style-3
+    .ufmt-online-about-course
+    .featured-box {
+    margin: 10px 0;
+}
+
+.ufmt-online-about-course .featured-boxes-style-3 .featured-box .icon-featured {
+    display: inline-block;
+    font-size: 30px;
+    height: 75px;
+    line-height: 75px;
+    padding: 0;
+    width: 75px;
+    margin-top: -35px;
+    background: #fff;
+    border: 3px solid #ccc;
+    color: #ccc;
+    line-height: 68px;
+}
+
+.ufmt-online-about-course
+    .featured-boxes-style-3:not(.featured-boxes-flat)
+    .featured-box {
+    background: none;
+    border: 0;
+    box-shadow: none;
+}
+
+.ufmt-online-about-course
+    .featured-boxes-style-3:not(.featured-boxes-flat)
+    .featured-box
+    .box-content {
+    border: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/*.ufmt-online-about-course  Featured Boxes - Style 4 */
+.ufmt-online-about-course
+    .featured-boxes-style-4
+    .ufmt-online-about-course
+    .featured-box {
+    background: none;
+    border: 0;
+    margin: 10px 0;
+    box-shadow: none;
+}
+
+.ufmt-online-about-course .featured-boxes-style-4 .featured-box .box-content {
+    border: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.ufmt-online-about-course .featured-boxes-style-4 .featured-box .icon-featured {
+    display: inline-block;
+    font-size: 40px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0;
+    width: 45px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    background: transparent;
+    color: #ccc;
+    border-radius: 0;
+}
+
+/*.ufmt-online-about-course  Featured Boxes - Style 5, 6 and 7 */
+.ufmt-online-about-course
+    .featured-boxes-style-5
+    .ufmt-online-about-course
+    .featured-box,
+.ufmt-online-about-course .featured-boxes-style-6 .featured-box,
+.featured-boxes-style-7 .featured-box {
+    background: none;
+    border: 0;
+    box-shadow: none;
+    margin: 10px 0;
+}
+
+.ufmt-online-about-course .featured-boxes-style-5 .featured-box .box-content,
+.featured-boxes-style-6 .featured-box .box-content,
+.featured-boxes-style-7 .featured-box .box-content {
+    border: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.ufmt-online-about-course .featured-boxes-style-5 .featured-box .box-content h4,
+.featured-boxes-style-6 .featured-box .box-content h4,
+.featured-boxes-style-7 .featured-box .box-content h4 {
+    color: #2e353e;
+}
+
+.ufmt-online-about-course .featured-boxes-style-5 .featured-box .icon-featured,
+.featured-boxes-style-6 .featured-box .icon-featured,
+.featured-boxes-style-7 .featured-box .icon-featured {
+    display: inline-block;
+    font-size: 30px;
+    height: 75px;
+    padding: 0;
+    width: 75px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    background: #fff;
+    border: 1px solid #dfdfdf;
+    color: #777;
+    line-height: 73px;
+}
+
+/*.ufmt-online-about-course  Featured Boxes - Style 6 */
+.ufmt-online-about-course
+    .featured-boxes-style-6
+    .ufmt-online-about-course
+    .featured-box
+    .icon.ufmt-online-about-course
+    -featured {
+    border: 1px solid #cecece;
+    color: #777;
+}
+
+.ufmt-online-about-course
+    .featured-boxes-style-6
+    .featured-box
+    .icon-featured:after {
+    border: 5px solid #f4f4f4;
+    border-radius: 50%;
+    box-sizing: content-box;
+    content: "";
+    display: block;
+    height: 100%;
+    left: -6px;
+    padding: 1px;
+    position: absolute;
+    top: -6px;
+    width: 100%;
+}
+
+/*.ufmt-online-about-course  Featured Boxes - Style 7 */
+.ufmt-online-about-course
+    .featured-boxes-style-7
+    .ufmt-online-about-course
+    .featured-box
+    .icon.ufmt-online-about-course
+    -featured {
+    border: 1px solid #dfdfdf;
+    color: #777;
+}
+
+/*.ufmt-online-about-course  Featured Boxes - Style 8 */
+.ufmt-online-about-course
+    .featured-boxes-style-8
+    .ufmt-online-about-course
+    .featured-box
+    .icon.ufmt-online-about-course
+    -featured {
+    display: inline-block;
+    font-size: 30px;
+    height: 75px;
+    padding: 0;
+    width: 75px;
+    margin: -15px -15px 0 0;
+    background: #fff;
+    line-height: 73px;
+    border: 0;
+    color: #777;
+}
+
+.ufmt-online-about-course
+    .featured-boxes-style-8
+    .featured-box
+    .icon-featured:after {
+    display: none;
+}
+
+/*.ufmt-online-about-course  Featured Boxes */
+.ufmt-online-about-course
+    .featured-boxes
+    .ufmt-online-about-course
+    .featured-box {
+    margin-bottom: 30px;
+    margin-top: 45px;
+}
+
+/* Effects */
+.ufmt-online-about-course
+    .featured-box-effect-1
+    .icon.ufmt-online-about-course
+    -featured:after {
+    top: -7px;
+    left: -7px;
+    padding: 7px;
+    box-shadow: 0 0 0 3px #fff;
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+    -webkit-transform: scale(1);
+    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transition: transform 0.2s, opacity 0.2s;
+    transform: scale(1);
+    opacity: 0;
+}
+
+.ufmt-online-about-course .featured-box-effect-1:hover .icon-featured:after {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 1;
+}
+
+.ufmt-online-about-course .featured-box-effect-2 .icon-featured:after {
+    top: -7px;
+    left: -7px;
+    padding: 7px;
+    box-shadow: 0 0 0 3px #fff;
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+    -webkit-transform: scale(0.8);
+    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transition: transform 0.2s, opacity 0.2s;
+    transform: scale(0.8);
+    opacity: 0;
+}
+
+.ufmt-online-about-course .featured-box-effect-2:hover .icon-featured:after {
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+    opacity: 1;
+}
+
+.ufmt-online-about-course .featured-box-effect-3 .icon-featured:after {
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 0 10px #fff;
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+    -webkit-transform: scale(0.9);
+    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transition: transform 0.2s, opacity 0.2s;
+    transform: scale(0.9);
+    opacity: 0;
+}
+
+.ufmt-online-about-course .featured-box-effect-3:hover .icon-featured {
+    color: #fff !important;
+}
+
+.ufmt-online-about-course .featured-box-effect-3:hover .icon-featured:after {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 0.8;
+}
+
+.ufmt-online-about-course .featured-box-effect-4 .icon-featured {
+    -webkit-transition: -webkit-transform 0.2s, transform 0.2s;
+    -moz-transition: -moz-transform 0.2s, transform 0.2s;
+    transition: transform 0.2s, transform 0.2s;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.ufmt-online-about-course .featured-box-effect-4:hover .icon-featured {
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+}
+
+.ufmt-online-about-course .featured-box-effect-5 .icon-featured {
+    overflow: hidden;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.ufmt-online-about-course .featured-box-effect-5:hover .icon-featured {
+    -webkit-animation: toRightFromLeft 0.3s forwards;
+    -moz-animation: toRightFromLeft 0.3s forwards;
+    animation: toRightFromLeft 0.3s forwards;
+}
+
+@-webkit-keyframes toRightFromLeft {
+    49% {
+        -webkit-transform: translate(100%);
+    }
+
+    50% {
+        opacity: 0;
+        -webkit-transform: translate(-100%);
+    }
+
+    51% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes toRightFromLeft {
+    49% {
+        -moz-transform: translate(100%);
+    }
+
+    50% {
+        opacity: 0;
+        -moz-transform: translate(-100%);
+    }
+
+    51% {
+        opacity: 1;
+    }
+}
+
+@keyframes toRightFromLeft {
+    49% {
+        transform: translate(100%);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translate(-100%);
+    }
+
+    51% {
+        opacity: 1;
+    }
+}
+
+.ufmt-online-about-course .featured-box-effect-6 .icon-featured:after {
+    -webkit-transition: all 0.2s, -webkit-transform 0.2s;
+    -moz-transition: all 0.2s, -moz-transform 0.2s;
+    transition: all 0.2s, transform 0.2s;
+}
+
+.ufmt-online-about-course
+    .featured-box-effect-6:hover
+    .box-content
+    .icon-featured:after {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.ufmt-online-about-course .featured-box-effect-7 .icon-featured:after {
+    opacity: 0;
+    box-shadow: 3px 3px #d5d5d5;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+    -moz-transition: opacity 0.2s, -moz-transform 0.2s;
+    transition: opacity 0.2s, transform 0.2s;
+    left: 0;
+    top: -1px;
+}
+
+.ufmt-online-about-course .featured-box-effect-7:hover .icon-featured:after {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.ufmt-online-about-course .featured-box-effect-7 .icon-featured:before {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.7;
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.ufmt-online-about-course .featured-box-effect-7:hover .icon-featured:before {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+.ufmt-online-about-course .page-header-color h1 span {
+    opacity: 0.65;
+}
+
+.ufmt-online-about-course .page-header h1 span {
+    color: #999da3;
+    display: block;
+    font-size: 0.5em;
+    font-weight: 300;
+    line-height: 1.3em;
+    margin: 7px 0 0;
+}
+
+.ufmt-online-about-course .list.list-icons {
+    list-style: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+.ufmt-online-about-course .list.list-icons.list-icons-style-2 li {
+    padding-top: 5px;
+    padding-left: 36px;
+}
+.ufmt-online-about-course
+    .list.list-icons.list-icons-style-2
+    li
+    > .fa:first-child {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    padding: 4px;
+}
+
+.ufmt-online-about-course .list.list-icons li > .fa:first-child {
+    color: #4582bf;
+    border-color: #4582bf;
+}
+.ufmt-online-about-course {
+    h1 {
+        text-align: left;
+        width: 70%;
+    }
+}
+.content-wrapper {
+    padding: 20px !important;
+    margin: 0 !important;
+}
+
+.teacher-container {
+    display: flex;
+    max-width: 800px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teacher {
+    display: flex;
+    flex-direction: column;
+}
+
+.teacher img {
+    width: 180px;
+    height: 180px;
+    padding: 15px;
+    align-self: center;
+
+    border-radius: 50%;
+}
+
+.teacher h4 {
+    text-align: center;
+}
+
+.teacher p {
+    text-align: left;
+    padding: 10px;
+    align-self: center;
+    vertical-align: middle;
+    color: #777;
+}
+
+.teacher-photo-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .teacher {
+        display: flex;
+        flex-direction: row;
+    }
+}

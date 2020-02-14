@@ -13,18 +13,37 @@
 .footer-card {
     width: 300px;
     height: 240px;
+    @media (max-width: 600px) {
+        height: 100%;
+        margin-bottom: 30px;
+    }
 }
 
 .footer-card-body {
     display: flex;
     flex-direction: column;
-    align-items: center;
+
+    a {
+        img {
+            margin-bottom: 15px;
+        }
+    }
 
     ul {
-        li {
-            padding-bottom: 10px;
-            padding-top: 10px;
+        margin-left: 0;
+        margin-right: 0;
+        p {
+            margin-bottom: 0;
+            margin-top: 0;
         }
+
+        li {
+            padding-bottom: 8px;
+            padding-top: 8px;
+        }
+    }
+    @media (max-width: 600px) {
+        align-items: center;
     }
 }
 
@@ -43,12 +62,17 @@
     display: flex;
     align-items: center;
     justify-items: center;
+    padding-left: 26%;
 
     li {
         margin-right: 40px;
         a {
             font-size: 20px;
         }
+    }
+
+    @media (max-width: 600px) {
+        padding: 0;
     }
 }
 
@@ -81,6 +105,7 @@
     }
     background: #0e0e0e;
     width: 100%;
+    padding: 15px;
     padding-top: 50px;
 }
 
