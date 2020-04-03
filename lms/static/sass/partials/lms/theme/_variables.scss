@@ -904,4 +904,8 @@ section.page-header.custom-product {
     }
 }
 
+.collapse:not(.show) {
+    display: block!important;
+}
+
 @import "edx-bootstrap/sass/open-edx/theme";
