@@ -1,0 +1,83 @@
+///inicio do css para certificado do ufmtonline
+.titleCertificate {
+    top: 87px;
+    left: 295px;
+    width: 308px;
+    height: 56px;
+    text-align: left;
+    font-family: "Gentium Book Basic";
+    font-size: 48px;
+    letter-spacing: 0;
+    color: #2870b4;
+    opacity: 1;
+}
+
+.accomplishment-rendering {
+    border: 12px solid #2870b4 !important;
+    border-image-source: -webkit-linear-gradient(
+        top left,
+        darkblue -25%,
+        lightblue 75%
+    ) !important;
+    border-image-slice: 20 !important;
+}
+.signatory_ufmt {
+    top: 428px;
+    left: 355px;
+    width: 166px;
+    height: 42px;
+    text-align: center;
+    letter-spacing: 0;
+    color: #161615;
+}
+
+.accomplishment-rendering .accomplishment-statement,
+.accomplishment-rendering .accomplishment-signatories {
+    border-bottom: none !important;
+}
+.logo_ufmtOnline {
+    top: 489px;
+    left: 605px;
+    width: 174px;
+    height: 28px;
+    background: transparent url("Grupo_3.svg") 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.wrapper-organization {
+    float: right !important;
+    margin-right: 50px !important;
+}
+
+.layout-accomplishment .accomplishment-rendering {
+    position: relative !important;
+    top: 0.5rem !important;
+}
+.depth-card,
+.accomplishment-brief,
+.accomplishment-rendering {
+    box-shadow: none !important;
+    padding: 1.25rem 1.25rem !important;
+    background: #fff !important;
+}
+.wrapper-metadata {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+}
+.accomplishment-type {
+    margin-top: 50px !important;
+}
+.accomplishment-metadata {
+    margin-top: 50px !important;
+}
+.deco-fl {
+    top: -8px;
+    left: -37px;
+    width: 441px;
+    height: 601px;
+    background: transparent url("Retangulo_1.png") 0% 0% no-repeat padding-box;
+    opacity: 1;
+    position: absolute;
+}
+
+///fim do css para certificado do ufmtonline
