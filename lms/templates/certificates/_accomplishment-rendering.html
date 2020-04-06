@@ -23,7 +23,7 @@ course_mode_class = course_mode if course_mode else ''
                 <div class="accomplishment-statement">
                     <p class="accomplishment-statement-lead">
                         <strong class="accomplishment-recipient hd-1 emphasized">${accomplishment_copy_name}</strong>
-                        <span class="accomplishment-summary copy copy-lead">${accomplishment_copy_description_full}</span>
+                        <span class="accomplishment-summary copy copy-lead">Completou com sucesso e foi concedido o certificado de conclusão em </span>
 
                         <span class="accomplishment-course hd-1 emphasized">
                             <span class="accomplishment-course-org">${accomplishment_copy_course_org}  </span>
@@ -31,8 +31,7 @@ course_mode_class = course_mode if course_mode else ''
                             <span class="accomplishment-course-name">${accomplishment_copy_course_name}</span>
                         </span>
                     </p>
-
-                    <p class="accomplishment-statement-detail copy copy-lead">${accomplishment_copy_course_description}</p>
+                    
                 </div>
 
                 % if mode != 'base':
@@ -92,7 +91,7 @@ course_mode_class = course_mode if course_mode else ''
                 <dl class="metadata accomplishment-id">
 
                     <dt class="label copy copy-meta"> A autenticidade deste documento pode ser conferido no site:</dt>
-                    <dd class="value copy copy-base">http://</dd>
+                    <dd class="value copy copy-base">https://ufmtonline.ufmt.br/certificado/valida</dd>
                 </dl>
                 
                 <dl class="metadata accomplishment-id">
