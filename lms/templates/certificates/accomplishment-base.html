@@ -9,6 +9,8 @@ dir_rtl = 'rtl' if get_language_bidi() else 'ltr'
 course_mode_class = course_mode if course_mode else ''
 %>
 
+
+
 <!DOCTYPE html>
 <html class="no-js" lang="${LANGUAGE_CODE}">
 <head dir="${dir_rtl}">
@@ -19,6 +21,7 @@ course_mode_class = course_mode if course_mode else ''
     <title>${document_title}</title>
 
     <%static:css group='style-certificates'/>
+    <link href="/static/edx.ufmt-online/css/ufmt-certificate.css" rel="stylesheet" type="text/css">
 </head>
 
 <body class="layout-accomplishment view-valid-accomplishment ${dir_rtl} certificate certificate-${course_mode_class}" data-view="valid-accomplishment">

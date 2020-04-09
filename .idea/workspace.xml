@@ -11,15 +11,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lms/static/sass/partials/lms/theme/UFMTOnLine.certificate.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="70" column="48" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lms/templates/certificates/accomplishment-base.html">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -32,8 +23,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lms/templates/certificates/_accomplishment-rendering.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="24" column="108" selection-start-line="24" selection-start-column="108" selection-end-line="24" selection-end-column="108" />
+            <state relative-caret-position="442">
+              <caret line="26" selection-end-line="109" />
             </state>
           </provider>
         </entry>
@@ -57,7 +48,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="100" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -187,12 +178,12 @@
       <workItem from="1583418329710" duration="3885000" />
       <workItem from="1583851228463" duration="612000" />
       <workItem from="1584457633135" duration="732000" />
-      <workItem from="1586181365144" duration="4195000" />
+      <workItem from="1586181365144" duration="6240000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10314000" />
+    <option name="totallyTimeSpent" value="12359000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -242,8 +233,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lms/templates/certificates/_accomplishment-rendering.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="24" column="108" selection-start-line="24" selection-start-column="108" selection-end-line="24" selection-end-column="108" />
+        <state relative-caret-position="442">
+          <caret line="26" selection-end-line="109" />
         </state>
       </provider>
     </entry>
