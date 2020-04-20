@@ -80,9 +80,9 @@
 }
 
 .signatory-signature {
-    display: block;
+    display: block !important;
 }
 
 .accomplishment-type-symbol {
-    display: block;
+    display: block !important;
 }
