@@ -3,7 +3,29 @@
 Based on https://github.com/dehamzah/starter-theme-openedx
 
 
-## Instruções
+## Instruções para o tutor
+
+Toda alteração deve-se compilar novamente o container (tutor images build openedx), parar os containers (tutor local stop) e iniciar novamente (tutor local quickstart)
+
+Caso for puxar novas atualizações do repositório do tema ou fazer alterações localmente, acesse a pasta do tema com o seguinte comando:
+
+```
+cd "$(tutor config printroot)/env/build/openedx/themes/edx.ufmt-online"
+
+```
+```
+git clone https://github.com/ejklock/edx.ufmt-online "$(tutor config printroot)/env/build/openedx/themes/edx.ufmt-online"
+
+tutor local stop
+
+tutor images build openedx
+
+tutor local quickstart
+
+```
+
+
+## Instruções para Instalação Padrão do OpenEdx (Native)
 * Mudar para o usuário `edxapp`
 ```
 sudo -u edxapp bash
