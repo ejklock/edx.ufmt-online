@@ -7,17 +7,20 @@
 
 ## Pages currently use v1 styling by default. Once the Pattern Library
 ## rollout has been completed, this default can be switched to v2.
+<%page expression_filter="h"/>
 <%! main_css = "style-main-v1" %>
 
 
 <%namespace name='static' file='static_content.html'/>
 <% online_help_token = self.online_help_token() if hasattr(self, 'online_help_token') else None %>
 <%!
+import six
 from branding import api as branding_api
 from django.urls import reverse
 from django.utils.http import urlquote_plus
 from django.utils.translation import ugettext as _
 from django.utils.translation import get_language_bidi
+from lms.djangoapps.courseware.access import has_access
 from openedx.core.djangoapps.site_configuration import helpers as configuration_helpers
 from openedx.core.djangolib.js_utils import dump_js_escaped_json, js_escaped_string
 from openedx.core.release import RELEASE_LINE
@@ -88,7 +91,7 @@ from pipeline_mako import render_require_js_path_overrides
       <%
       rtl_css_file = self.attr.main_css.replace('.css', '-rtl.css')
       %>
-      <link rel="stylesheet" href="${unicode(static.url(rtl_css_file))}" type="text/css" media="all" />
+      <link rel="stylesheet" href="${six.text_type(static.url(rtl_css_file))}" type="text/css" media="all" />
     % else:
       <link rel="stylesheet" href="${static.url(self.attr.main_css)}" type="text/css" media="all" />
     % endif
@@ -128,24 +131,35 @@ from pipeline_mako import render_require_js_path_overrides
   <%block name="head_extra"/>
 
   <%include file="/courseware/experiments.html"/>
-  <%include file="user_metadata.html"/>
+  <%include file="/experiments/user_metadata.html"/>
   <%static:optional_include_mako file="head-extra.html" is_theming_enabled="True" />
 
   <%include file="widgets/optimizely.html" />
   <%include file="widgets/segment-io.html" />
 
   <meta name="path_prefix" content="${EDX_ROOT_URL}">
- 
-  <meta name="openedx-release-line" content="${RELEASE_LINE}" />
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133936232-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <% google_site_verification_id = configuration_helpers.get_value('GOOGLE_SITE_VERIFICATION_ID', settings.GOOGLE_SITE_VERIFICATION_ID) %>
+  % if google_site_verification_id:
+    <meta name="google-site-verification" content="${google_site_verification_id}" />
+  % endif
 
-  gtag('config', 'UA-133936232-1');
-</script>
+  <meta name="openedx-release-line" content="${RELEASE_LINE}" />
+
+<% ga_acct = static.get_value("GOOGLE_ANALYTICS_ACCOUNT", settings.GOOGLE_ANALYTICS_ACCOUNT) %>
+% if ga_acct:
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '${ga_acct | n, js_escaped_string}']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+% endif
+
 <% branch_key = static.get_value("BRANCH_IO_KEY", settings.BRANCH_IO_KEY) %>
 % if branch_key and not is_from_mobile_app:
     <script type="text/javascript">
@@ -157,19 +171,13 @@ from pipeline_mako import render_require_js_path_overrides
 </head>
 
 <body class="${static.dir_rtl()} <%block name='bodyclass'/> lang_${LANGUAGE_CODE}">
-<div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;">
-  <ul id="menu-barra-temp" style="list-style:none;">
-    <li style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED">
-        <a href="http://brasil.gov.br" style="font-family:sans,sans-serif; text-decoration:none; color:white;">Portal do Governo Brasileiro</a>
-    </li>
-  </ul>
-</div>
 
 <%static:optional_include_mako file="body-initial.html" is_theming_enabled="True" />
 <div id="page-prompt"></div>
 % if not disable_window_wrap:
   <div class="window-wrap" dir="${static.dir_rtl()}">
 % endif
+    <%block name="skip_links"/>
     <a class="nav-skip sr-only sr-only-focusable" href="#main">${_("Skip to main content")}</a>
 
     % if not disable_header:
@@ -177,11 +185,16 @@ from pipeline_mako import render_require_js_path_overrides
         <%include file="/preview_menu.html" />
     % endif
 
+    <% is_course_staff = bool(user and course and has_access(user, 'staff', course, course.id)) %>
+    % if course and course.self_paced and display_reset_dates_banner and not is_course_staff:
+        <%include file="/reset_deadlines_banner.html" />
+    % endif
+
     <%include file="/page_banner.html" />
 
     <div class="marketing-hero"><%block name="marketing_hero"></%block></div>
 
-    <div class="content-wrapper main-container" id="content">
+    <div class="content-wrapper main-container" id="content" dir="${static.dir_rtl()}">
       ${self.body()}
       <%block name="bodyextra"/>
     </div>
@@ -200,13 +213,11 @@ from pipeline_mako import render_require_js_path_overrides
   <%include file="widgets/segment-io-footer.html" />
   <script type="text/javascript" src="${static.url('js/vendor/noreferrer.js')}" charset="utf-8"></script>
   <script type="text/javascript" src="${static.url('js/utils/navigation.js')}" charset="utf-8"></script>
- 
   <script type="text/javascript" src="${static.url('js/header/header.js')}"></script>
   <%static:optional_include_mako file="body-extra.html" is_theming_enabled="True" />
- 
-  
+  <script type="text/javascript" src="${static.url('js/src/jquery_extend_patch.js')}"></script>
+  <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="text/javascript"></script>
 </body>
- <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js" type="text/javascript"></script>
 </html>
 
 <%def name="login_query()">${
