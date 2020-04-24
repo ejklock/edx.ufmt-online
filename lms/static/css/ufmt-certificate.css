@@ -34,6 +34,7 @@
 .accomplishment-rendering .accomplishment-signatories {
     border-bottom: none !important;
 }
+
 .logo_ufmtOnline {
     top: 489px;
     left: 605px;
@@ -85,4 +86,16 @@
 
 .accomplishment-type-symbol {
     display: block !important;
+}
+
+/*CSS usado para não exibir div com as organizations*/
+.accomplishment-orgs {
+    display: none !important;
+}
+
+/*CSS usado para alterar as propriedades da logo superior do certificado*/
+.accomplishment-rendering .accomplishment-type-symbol {
+    height: 6.25rem !important;
+    width: 19.25rem !important;
+    margin: 0 auto 1.25rem auto !important;
 }
