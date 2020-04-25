@@ -908,4 +908,17 @@ section.page-header.custom-product {
     display: block!important;
 }
 
+.mobile-nav-item.hidden-mobile.nav-item.nav-tab>a {
+    display: none!important;
+}
+
+
+.course-header span.provider, span.course-number {
+    display: none!important;
+}
+
+a.help-link {
+    display: none!important;
+}
+
 @import "edx-bootstrap/sass/open-edx/theme";
