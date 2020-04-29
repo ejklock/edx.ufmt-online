@@ -99,6 +99,8 @@ $('#register_error').html(
 <script src="${static.url('js/course_info.js')}"></script>
 </%block>
 <%block name="pagetitle">${course.display_name_with_default_escaped}</%block>
+<div class="bootstrap-wrapper">
+</div>
 <div class="ufmt-online-about-course">
    <section class="page-header page-header-color page-header-primary page-header-more-padding">
       <div class="container">
@@ -120,6 +122,7 @@ $('#register_error').html(
       </div>
    </section>
 </div>
+<div class="bootstrap-wrapper">
 <div class="container ufmt-online-about-course">
    <section class="p-lg">
       <div class="row">
@@ -245,6 +248,8 @@ $('#register_error').html(
    </form>
 </div>
 %endif
+</div>
+
 <%include file="../video_modal.html" />
 <%static:require_module_async module_name="js/dateutil_factory" class_name="DateUtilFactory">
    DateUtilFactory.transform(iterationKey=".localized_datetime");
