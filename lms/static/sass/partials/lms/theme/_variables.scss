@@ -323,26 +323,6 @@ a.help-link {
         color: #fff;
     }
 
-    .embed-responsive {
-        position: relative;
-        display: block;
-        height: 0;
-        padding: 0;
-        overflow: hidden;
-    }
-    .embed-responsive iframe {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: 0;
-    }
-    .embed-responsive-16by9 {
-        padding-bottom: 56.25%;
-    }
-
     .ufmt-online-about-course
         .page-header-color.page-header-quaternary
         h1
@@ -1426,5 +1406,49 @@ a.help-link {
         .container {
             min-width: 992px !important;
         }
+    }
+    .col-md-6 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    @media (min-width: 992px) {
+        .col-md-6 {
+            float: left;
+        }
+        .col-md-6 {
+            width: 50%;
+        }
+    }
+    .embed-responsive {
+        position: relative;
+        display: block;
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .embed-responsive iframe {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+    .embed-responsive-16by9 {
+        padding-bottom: 56.25%;
+    }
+    .container:after,
+    .container:before,
+    .row:after,
+    .row:before {
+        display: table;
+        content: " ";
+    }
+    .container:after,
+    .row:after {
+        clear: both;
     }
 }
