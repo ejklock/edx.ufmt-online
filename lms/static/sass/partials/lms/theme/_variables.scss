@@ -320,6 +320,25 @@ a.help-link {
             width: 50%;
         }
     }
+    .col-md-4,
+    .col-md-8 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    @media (min-width: 992px) {
+        .col-md-4,
+        .col-md-8 {
+            float: left;
+        }
+        .col-md-8 {
+            width: 66.66666667%;
+        }
+        .col-md-4 {
+            width: 33.33333333%;
+        }
+    }
     .embed-responsive {
         position: relative;
         display: block;
@@ -456,5 +475,248 @@ a.help-link {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
+    }
+
+    /*! CSS Used from: https://ufmtonline.ufmt.br/home/css/theme.css */
+    body a {
+        outline: none !important;
+    }
+    li {
+        line-height: 24px;
+    }
+    .mb-none {
+        margin-bottom: 0 !important;
+    }
+    .p-lg {
+        padding: 20px !important;
+    }
+    /*! CSS Used from: https://ufmtonline.ufmt.br/home/css/theme-elements.css */
+    h1,
+    h2 {
+        color: #1d2127;
+        font-weight: 200;
+        letter-spacing: -1px;
+        margin: 0;
+    }
+    h1 {
+        font-size: 2.6em;
+        line-height: 44px;
+        margin: 0 0 32px 0;
+    }
+    h2 {
+        font-size: 2.2em;
+        font-weight: 300;
+        line-height: 42px;
+        margin: 0 0 32px 0;
+    }
+    @media (max-width: 479px) {
+        h2 {
+            line-height: 40px;
+        }
+    }
+    p {
+        color: #777;
+        line-height: 24px;
+        margin: 0 0 20px;
+    }
+    a,
+    a:hover,
+    a:focus {
+        color: #ccc;
+    }
+    .list li {
+        margin-bottom: 13px;
+    }
+    .list.list-icons {
+        list-style: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .list.list-icons li {
+        position: relative;
+        padding-left: 25px;
+    }
+    .list.list-icons li > .fa:first-child {
+        position: absolute;
+        left: 0;
+        top: 5px;
+    }
+    .list.list-icons.list-icons-style-2 li {
+        padding-top: 5px;
+        padding-left: 36px;
+    }
+    .list.list-icons.list-icons-style-2 li > .fa:first-child {
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        padding: 4px;
+    }
+    .toggle {
+        margin: 10px 0 20px;
+        position: relative;
+        clear: both;
+    }
+    .toggle .toggle {
+        margin: 10px 0 0;
+    }
+    .toggle > label {
+        -webkit-transition: all 0.15s ease-out;
+        -moz-transition: all 0.15s ease-out;
+        transition: all 0.15s ease-out;
+        background: #f4f4f4;
+        border-left: 3px solid #ccc;
+        border-radius: 5px;
+        color: #ccc;
+        display: block;
+        font-size: 1.1em;
+        min-height: 20px;
+        padding: 12px 20px 12px 10px;
+        position: relative;
+        cursor: pointer;
+        font-weight: 400;
+    }
+    .toggle > label:-moz-selection {
+        background: none;
+    }
+    .toggle > label:selection {
+        background: none;
+    }
+    .toggle > label:before {
+        border: 6px solid transparent;
+        border-left-color: inherit;
+        content: "";
+        margin-top: -6px;
+        position: absolute;
+        right: 4px;
+        top: 50%;
+    }
+    .toggle > label:hover {
+        background: #f5f5f5;
+    }
+    .toggle > label + p {
+        color: #999;
+        display: block;
+        overflow: hidden;
+        padding-left: 30px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        height: 25px;
+    }
+    hr {
+        background-image: -webkit-linear-gradient(
+            left,
+            transparent,
+            #dbdbdb,
+            transparent
+        );
+        background-image: linear-gradient(
+            to right,
+            transparent,
+            #dbdbdb,
+            transparent
+        );
+        border: 0;
+        height: 1px;
+        margin: 22px 0;
+    }
+    hr.gradient-to-right {
+        background-image: -webkit-linear-gradient(left, #dbdbdb, transparent);
+        background-image: linear-gradient(to right, #dbdbdb, transparent);
+    }
+    hr.solid {
+        background: #dbdbdb;
+    }
+    .featured-box {
+        background: #f5f5f5;
+        background: -webkit-linear-gradient(top, #fff 1%, #fcfcfc 98%) repeat
+            scroll 0 0 transparent;
+        background: linear-gradient(to bottom, #fff 1%, #fcfcfc 98%) repeat
+            scroll 0 0 transparent;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border-bottom: 1px solid #dfdfdf;
+        border-left: 1px solid #ececec;
+        border-radius: 8px;
+        border-right: 1px solid #ececec;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.04);
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        min-height: 100px;
+        position: relative;
+        text-align: center;
+        z-index: 1;
+    }
+    .featured-box .box-content {
+        border-radius: 8px;
+        border-top: 1px solid #ccc;
+        border-top-width: 4px;
+        padding: 30px 30px 10px 30px;
+        position: relative;
+        top: -1px;
+    }
+    .featured-box-text-left {
+        text-align: left;
+    }
+    /*! CSS Used from: https://ufmtonline.ufmt.br/home/css/default.css */
+    a {
+        color: #0088cc;
+    }
+    a:hover {
+        color: #0099e6;
+    }
+    a:focus {
+        color: #0099e6;
+    }
+    a:active {
+        color: #0077b3;
+    }
+    html .toggle-primary .toggle label {
+        color: #0088cc;
+        border-left-color: #0088cc;
+        border-right-color: #0088cc;
+    }
+    .list.list-icons li > .fa:first-child {
+        color: #0088cc;
+        border-color: #0088cc;
+    }
+    .featured-box-primary .box-content {
+        border-top-color: #0088cc;
+    }
+    html .featured-box-primary .box-content {
+        border-top-color: #0088cc;
+    }
+    /*! CSS Used from: https://ufmtonline.ufmt.br/home/css/custom.css */
+    a {
+        color: #4582bf;
+    }
+    a:hover {
+        color: #588fc6;
+    }
+    a:focus {
+        color: #588fc6;
+    }
+    a:active {
+        color: #3c75ae;
+    }
+    html .toggle-primary .toggle label {
+        color: #4582bf;
+        border-left-color: #4582bf;
+        border-right-color: #4582bf;
+    }
+    .list.list-icons li > .fa:first-child {
+        color: #4582bf;
+        border-color: #4582bf;
+    }
+    .featured-box-primary .box-content {
+        border-top-color: #4582bf;
+    }
+    html .featured-box-primary .box-content {
+        border-top-color: #4582bf;
     }
 }
