@@ -323,6 +323,26 @@ a.help-link {
         color: #fff;
     }
 
+    .embed-responsive {
+        position: relative;
+        display: block;
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .embed-responsive iframe {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+    .embed-responsive-16by9 {
+        padding-bottom: 56.25%;
+    }
+
     .ufmt-online-about-course
         .page-header-color.page-header-quaternary
         h1
